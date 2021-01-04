@@ -5,11 +5,12 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
- if (x > y || x === y) {
-    return x;
-}
-
-}
+   if (x > y || x === y) {
+     return x;
+   } else if (y > x || y === x) {
+      return y;
+   }
+  }
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
@@ -19,14 +20,14 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
  if (idioma === "aleman") {
-    return "Guten Tag!";
-   } else if (idioma === "mandarin") { 
-     return "Ni Hao";
-    } else if (idioma === "ingles") {
-     return "Hello";
-    } else {
-    return "Hola!";
-  }
+  return 'Guten Tag!';
+ } else if (idioma === "mandarin") {
+  return 'Ni Hao!';
+ } else if (idioma === "ingles") {
+  return 'Hello!';
+ } else if (idioma !== "aleman", "mandarin", "ingles") {
+  return 'Hola!';
+ }
 }
 
 function esDiezOCinco(numero) {
@@ -35,7 +36,8 @@ function esDiezOCinco(numero) {
     // Tu código:
     if (numero === 10 || numero === 5) {
       return true;
-    }
+    } else
+    return false;
 }
 
 function estaEnRango(numero) {
@@ -80,12 +82,17 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
- for (var i = 2; i < numero; i++) {
-  if (numero % i === 0 || numero % i === 1)
-  return false;
- }else 
- return true;
+  if (numero < 2) return false;
+  if (numero === 2) return true;
+
+ for ( var i = 2; i < numero; i++) {
+     if (numero % i === 0)
+        return false;
+ }
+
+  return true; 
 }
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
