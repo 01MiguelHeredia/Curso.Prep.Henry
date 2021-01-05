@@ -5,11 +5,15 @@
 1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
 
 	* Variables
+	//Una variable es una forma de almacenar el valor de algo para usar más tarde;
 	* Strings
+	//Las strins son bloques de texto;
 	* Funciones (argumentos, `return`)
+	//Las funciones son ordenes que de las que disponemos para asignar una tarea a lo que sea que estemos haciendo;
 	* Declaraciones `if`
+	//Las declaraciones 'if' son elementos que permiten llevar a cabo un escenario donde si algo sucede podemos ordenar al interprete que suceda otra cosa; de la misma manera se puede concatenar el if con su relativo 'else if' o 'else' para indicar que si lo primero no se cumple, que suceda otra cosa;
 	* Valores booleanos (`true`, `false`)
-
+    //Los valores booleanos son parametros que activan o desactivan variables, funciones o declaraciones, los valores booleanos son dos; 'true' y 'false' y estos justamente indican si algo se cumple o si no;
 
 2. Instalar Node y NPM. NPM se incluye con Node. https://nodejs.org/en/download/
 
